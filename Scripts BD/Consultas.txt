@@ -1,0 +1,24 @@
+
+1. Obtener la lista de precios de todos los productos
+	Select * from Product
+
+2. Obtener la lista de productos cuya existencia en el inventario haya llegado al mínimo
+permitido (5 unidades)
+	Select * from Product
+	where existencia <= 5
+
+3. Obtener una lista de clientes no mayores de 35 años que hayan realizado compras entre el
+1 de febrero de 2000 y el 25 de mayo de 2000
+	Select c.Id, c.Cedula, c.Nombres, c.Edad, fe.FechaFactura 
+	from Fac_Encabezado fe
+		inner join Client c on c.Id = fe.IdCliente
+	where c.Edad <= 35
+		and fe.FechaFactura between cast('01/02/2000' as datetime) and cast('25/05/2000' as datetime)
+
+4. Obtener el valor total vendido por cada producto en el año 2000
+	Select p.Id, p.existencia, p.Description, sum(p.precio * dt.Cantidad) as Valor 
+	from Fac_Encabezado fe
+		inner join Fac_DetalleFactura dt on dt.IdEncabezado = fe.Id
+		inner join Product p on p.Id = dt.IdProduct
+	where year(fe.FechaFactura) = 2000
+	group by p.Id, p.existencia, p.Description

@@ -1,0 +1,11 @@
+D:\DigitalWareTest\API\DigitalWareTest.Solution\DigitalWareTest.Api.Business\bin\Debug\DigitalWareTest.Api.Business.dll
+D:\DigitalWareTest\API\DigitalWareTest.Solution\DigitalWareTest.Api.Business\bin\Debug\DigitalWareTest.Api.Business.pdb
+D:\DigitalWareTest\API\DigitalWareTest.Solution\DigitalWareTest.Api.Business\bin\Debug\DigitalWareTest.Api.Data.dll
+D:\DigitalWareTest\API\DigitalWareTest.Solution\DigitalWareTest.Api.Business\bin\Debug\DigitalWareTest.Api.Entities.dll
+D:\DigitalWareTest\API\DigitalWareTest.Solution\DigitalWareTest.Api.Business\bin\Debug\DigitalWareTest.Api.Data.pdb
+D:\DigitalWareTest\API\DigitalWareTest.Solution\DigitalWareTest.Api.Business\bin\Debug\DigitalWareTest.Api.Entities.pdb
+D:\DigitalWareTest\API\DigitalWareTest.Solution\DigitalWareTest.Api.Business\obj\Debug\DigitalWareTest.Api.Business.csprojAssemblyReference.cache
+D:\DigitalWareTest\API\DigitalWareTest.Solution\DigitalWareTest.Api.Business\obj\Debug\DigitalWareTest.Api.Business.csproj.CoreCompileInputs.cache
+D:\DigitalWareTest\API\DigitalWareTest.Solution\DigitalWareTest.Api.Business\obj\Debug\DigitalWareTest.Api.Business.csproj.CopyComplete
+D:\DigitalWareTest\API\DigitalWareTest.Solution\DigitalWareTest.Api.Business\obj\Debug\DigitalWareTest.Api.Business.dll
+D:\DigitalWareTest\API\DigitalWareTest.Solution\DigitalWareTest.Api.Business\obj\Debug\DigitalWareTest.Api.Business.pdb

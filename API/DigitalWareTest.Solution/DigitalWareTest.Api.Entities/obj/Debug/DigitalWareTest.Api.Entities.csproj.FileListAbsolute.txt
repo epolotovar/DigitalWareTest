@@ -1,0 +1,6 @@
+D:\DigitalWareTest\API\DigitalWareTest.Solution\DigitalWareTest.Api.Entities\bin\Debug\DigitalWareTest.Api.Entities.dll
+D:\DigitalWareTest\API\DigitalWareTest.Solution\DigitalWareTest.Api.Entities\bin\Debug\DigitalWareTest.Api.Entities.pdb
+D:\DigitalWareTest\API\DigitalWareTest.Solution\DigitalWareTest.Api.Entities\obj\Debug\DigitalWareTest.Api.Entities.csprojAssemblyReference.cache
+D:\DigitalWareTest\API\DigitalWareTest.Solution\DigitalWareTest.Api.Entities\obj\Debug\DigitalWareTest.Api.Entities.csproj.CoreCompileInputs.cache
+D:\DigitalWareTest\API\DigitalWareTest.Solution\DigitalWareTest.Api.Entities\obj\Debug\DigitalWareTest.Api.Entities.dll
+D:\DigitalWareTest\API\DigitalWareTest.Solution\DigitalWareTest.Api.Entities\obj\Debug\DigitalWareTest.Api.Entities.pdb

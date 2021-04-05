@@ -1,0 +1,9 @@
+D:\DigitalWareTest\API\DigitalWareTest.Solution\DigitalWareTest.Api.Data\bin\Debug\DigitalWareTest.Api.Data.dll
+D:\DigitalWareTest\API\DigitalWareTest.Solution\DigitalWareTest.Api.Data\bin\Debug\DigitalWareTest.Api.Data.pdb
+D:\DigitalWareTest\API\DigitalWareTest.Solution\DigitalWareTest.Api.Data\bin\Debug\DigitalWareTest.Api.Entities.dll
+D:\DigitalWareTest\API\DigitalWareTest.Solution\DigitalWareTest.Api.Data\bin\Debug\DigitalWareTest.Api.Entities.pdb
+D:\DigitalWareTest\API\DigitalWareTest.Solution\DigitalWareTest.Api.Data\obj\Debug\DigitalWareTest.Api.Data.csprojAssemblyReference.cache
+D:\DigitalWareTest\API\DigitalWareTest.Solution\DigitalWareTest.Api.Data\obj\Debug\DigitalWareTest.Api.Data.csproj.CoreCompileInputs.cache
+D:\DigitalWareTest\API\DigitalWareTest.Solution\DigitalWareTest.Api.Data\obj\Debug\DigitalWareTest.Api.Data.csproj.CopyComplete
+D:\DigitalWareTest\API\DigitalWareTest.Solution\DigitalWareTest.Api.Data\obj\Debug\DigitalWareTest.Api.Data.dll
+D:\DigitalWareTest\API\DigitalWareTest.Solution\DigitalWareTest.Api.Data\obj\Debug\DigitalWareTest.Api.Data.pdb

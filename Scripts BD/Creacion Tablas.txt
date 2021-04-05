@@ -1,0 +1,76 @@
+
+1. Tabla Client
+CREATE TABLE [dbo].[Client](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[Cedula] [nvarchar](30) NOT NULL,
+	[Nombres] [nvarchar](100) NOT NULL,
+	[Direccion] [nvarchar](100) NULL,
+	[FechaNacimiento] [datetime] NOT NULL,
+	[Edad] [int] NOT NULL,
+ CONSTRAINT [PK_Client] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+2. Tabla Produt
+CREATE TABLE [dbo].[Product](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[Reference] [nvarchar](30) NOT NULL,
+	[Description] [nvarchar](100) NOT NULL,
+	[existencia] [int] NOT NULL,
+	[precio] [decimal](18, 0) NOT NULL,
+ CONSTRAINT [PK_Product] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+3. Tabla Fac_Encabezado
+CREATE TABLE [dbo].[Fac_Encabezado](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[IdCliente] [int] NOT NULL,
+	[FechaFactura] [datetime] NOT NULL,
+	[ValorTotal] [decimal](18, 0) NOT NULL,
+ CONSTRAINT [PK_Fac_Encabezado] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+ALTER TABLE [dbo].[Fac_Encabezado]  WITH CHECK ADD  CONSTRAINT [FK_Fac_Encabezado_Client] FOREIGN KEY([IdCliente])
+REFERENCES [dbo].[Client] ([Id])
+GO
+
+ALTER TABLE [dbo].[Fac_Encabezado] CHECK CONSTRAINT [FK_Fac_Encabezado_Client]
+GO
+
+4. Tabla Fac_DetalleFactura
+CREATE TABLE [dbo].[Fac_DetalleFactura](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[IdEncabezado] [int] NOT NULL,
+	[IdProduct] [int] NOT NULL,
+	[Cantidad] [int] NOT NULL,
+ CONSTRAINT [PK_Fac_DetalleFactura] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+ALTER TABLE [dbo].[Fac_DetalleFactura]  WITH CHECK ADD  CONSTRAINT [FK_Fac_DetalleFactura_Fac_Encabezado] FOREIGN KEY([IdEncabezado])
+REFERENCES [dbo].[Fac_Encabezado] ([Id])
+GO
+
+ALTER TABLE [dbo].[Fac_DetalleFactura] CHECK CONSTRAINT [FK_Fac_DetalleFactura_Fac_Encabezado]
+GO
+
+ALTER TABLE [dbo].[Fac_DetalleFactura]  WITH CHECK ADD  CONSTRAINT [FK_Fac_DetalleFactura_Product] FOREIGN KEY([IdProduct])
+REFERENCES [dbo].[Product] ([Id])
+GO
+
+ALTER TABLE [dbo].[Fac_DetalleFactura] CHECK CONSTRAINT [FK_Fac_DetalleFactura_Product]
+GO

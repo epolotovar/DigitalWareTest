@@ -1,0 +1,24 @@
+1. Insertar Encabezado
+ALTER PROCEDURE [dbo].[Ins_FacEncabezado] 
+	@IdCliente int,
+	@FechaFactura datetime,
+	@ValorTotal decimal,
+	@Id int out
+AS
+BEGIN
+	insert into Fac_Encabezado(IdCliente, FechaFactura, ValorTotal)
+	values (@IdCliente, @FechaFactura, @ValorTotal)
+
+	set @Id = @@IDENTITY
+END
+
+2. Insertar Detalle
+ALTER PROCEDURE [dbo].[Ins_FacDetalleFactura] 
+	@IdEncabezado int,
+	@IdProduct int,
+	@Cantidad int
+AS
+BEGIN
+	insert into Fac_DetalleFactura(IdEncabezado, IdProduct, Cantidad)
+	values (@IdEncabezado, @IdProduct, @Cantidad)
+END
